@@ -5,7 +5,7 @@ import React from "react";
 import sneakersLogo from "../../images/logo.svg";
 import cartIcon from "../../images/icon-cart.svg";
 import avatar from "../../images/image-avatar.png";
-// TO DO: Implement sidebar for smaller devices
+
 const Navbar = () => {
     return (
         <header className="fixed flex w-full px-44 h-32 items-center justify-between top-0">
