@@ -4,7 +4,8 @@ import Link from "next/link";
 import React from "react";
 import sneakersLogo from "../../images/logo.svg";
 import cartIcon from "../../images/icon-cart.svg";
-// TO DO: Add avatar icon, and render 3d model in Home
+import avatar from "../../images/image-avatar.png";
+// TO DO: Implement sidebar for smaller devices
 const Navbar = () => {
     return (
         <header className="fixed flex w-full px-44 h-32 items-center justify-between top-0">
@@ -24,8 +25,8 @@ const Navbar = () => {
                         ))}
                     </nav>
                 </div>
-                <div className="flex itesm-center gap-12">
-                    <div>
+                <div className="flex itesm-center gap-10">
+                    <div className="flex items-center">
                         <Image
                             src={cartIcon}
                             alt="Cart Icon"
@@ -33,7 +34,14 @@ const Navbar = () => {
                             height={20}
                         />
                     </div>
-                    <div>avatar</div>
+                    <div>
+                        <Image
+                            src={avatar}
+                            alt="Avatar image"
+                            width={40}
+                            height={40}
+                        />
+                    </div>
                 </div>
             </div>
         </header>
